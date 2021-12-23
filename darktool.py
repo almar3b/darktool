@@ -62,7 +62,6 @@ if choose == '1':
     os.system('pip install --upgrade pip ')
     os.system('pkg update && upgrade -y ;pip install --upgrade pip ; pkg install git -y ; pkg install nano -y ; pkg install python -y ; pkg install python2 -y ; pkg install php -y;pkg install unzip -y ; pkg install openssh -y ; pkg install cat -y ; pkg install curl -y ; pkg install wget -y ; pkg install w3m -y ;pkg install golang -y ; pkg install havij -y ; pkg install db -y ; pkg install postgresql -y ; pkg install uftrace -y ; pkg install ruby -y ; pkg install perl -y; pkg install bash -y ;pkg install figlet -y;pkg install cowsay -y; pkg install tar -y;pkg install zip -y; pkg install tor -y; pkg install toilet -y;pkg install proot -y; pkg install golang -y; pkg install openssl -y;pkg install cmatrix -y ; pkg install macchanger ;pkg install root-repo -y;pkg install unstable-repo -y;pkg install x11-repo -y ; pip install --upgrade pip ')
     os.system('clear')
-    print(logo)
     print("\033[1;31mThe installation was successful")
     time.sleep(3)
 ##############################################################
