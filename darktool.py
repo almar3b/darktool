@@ -88,12 +88,13 @@ elif choose == '3':
         main()
         time.sleep(0.3)
     elif q == '2':
-        os.system("cd Desktop")
+        #os.system("cd Desktop")
         os.system('wget  https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip  ')
         os.system('unzip ngrok-stable-linux-amd64.zip ')
         os.system('xdg-open https://dashboard.ngrok.com/signup ')
         os.system('chmod +x ngrok')
         os.system("rm -rf ngrok-stable-linux-amd64.zip")
+        os.system("mv ngrok /root/Desktop")
         print('\033[1;31m please copy the {2}  to Connect your account:  and copy paste here ')
         jalan ('\033[1;31mThe tool was loaded successfully')
 ##############################################################
