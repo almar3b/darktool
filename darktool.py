@@ -84,7 +84,7 @@ elif choose == '3':
         os.system('clear')
         print("Done")
         time.sleep(3)
-        print(logo)
+        #print(logo)
         main()
         time.sleep(0.3)
     elif q == '2':
