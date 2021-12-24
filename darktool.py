@@ -78,8 +78,15 @@ elif choose == '2':
 elif choose == '3':
     q=input("install termux[1] linux[2] : ")
     if q =='1':
-        os.system('cd $Home ; git clone https://github.com/python-life/ngrok.git ; cd ngrok ; mv ngrok $HOME; rm -rf -r ngrok')
-        os.system('chmod +x *')
+        os.system('cd $HOME')
+        os.system("clear")
+        os.system('pkg install tar ')
+        os.system('wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.tgz')
+        os.system('cd /sdcard/Download')
+        os.system('tar zxvf ngrok-stable-linux-arm.tgz')
+        os.system('mv ngrok $HOME')
+        os.system('cd')
+        os.system('chmod +x ngrok')
         jalan ('\033[1;31mThe tool was loaded successfully')
         os.system('clear')
         print("Done")
@@ -88,7 +95,7 @@ elif choose == '3':
         main()
         time.sleep(0.3)
     elif q == '2':
-        #os.system("cd Desktop")
+        os.system("cd /root/Desktop")
         os.system('wget  https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip  ')
         os.system('unzip ngrok-stable-linux-amd64.zip ')
         os.system('xdg-open https://dashboard.ngrok.com/signup ')
