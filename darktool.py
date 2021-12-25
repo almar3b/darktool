@@ -16,7 +16,7 @@ def jalan(z):
 os.system('clear' )
 os.system('clear') 
 print(random.choice(c))
-#jalan("loading.....! "*3)
+jalan("loading.....! "*3)
 #jalan("loading.....! "*3)
 #jalan("loading.....! "*3)
 #jalan("loading.....! "*3)
@@ -67,24 +67,26 @@ if choose == '1':
 ##############################################################
 elif choose == '2':
     y  = input('metesploit {1} metesploit {2} <<<<<<<<<<<_<<<<<<<: ')
-    if y =='1':
-     
+    if y =='1':     
         jalan("please wait ..")
         try:
-        os.system('pkg install root-repo ; pkg install unstable-repo ; pkg install x11-repo ; pkg update && pkg upgrade && pkg install git curl wget nmap -y && curl -LO raw.githubusercontent.com/Hax4us/Metasploit_termux/master/metasploit.sh && chmod 777 metasploit.sh && ./metasploit.sh ; bash metasploit.sh ')
-        print("The installation was successful")
+            os.system('pkg install root-repo ; pkg install unstable-repo ; pkg install x11-repo ; pkg update && pkg upgrade && pkg install git curl wget nmap -y && curl -LO raw.githubusercontent.com/Hax4us/Metasploit_termux/master/metasploit.sh && chmod 777 metasploit.sh && ./metasploit.sh ; bash metasploit.sh ')
+            print("The installation was successful")
         except:
-        print("Installation failed")
-        time.sleep(3)
-        os.system('exit') 
+            print("Installation failed")
+            time.sleep(3)
+            os.system('exit') 
     elif y =='2':
-        os.system('clear')
-        os.system('pkg update && pkg upgrade -y && pkg install wget curl openssh git –y')
-        os.system("clear")
-        os.system('Cd $HOME')
-        os.system('Wget Auxilus.github.io/metasploit.sh')
-        os.system('Bash metasploit.sh')
-        print('to Run the tool please write : msfconsole') 
+        try:
+            os.system('clear')
+            os.system('pkg update && pkg upgrade -y && pkg install wget curl openssh git –y')
+            os.system("clear")
+            os.system('Cd $HOME')
+            os.system('Wget Auxilus.github.io/metasploit.sh')
+            os.system('Bash metasploit.sh')
+            print('to Run the tool please write : msfconsole')
+        except:
+            print('the instaltion is faild')
 ##############################################################
 elif choose == '3':
     q=input("install termux[1] linux[2] : ")
@@ -163,3 +165,5 @@ elif choose =='7':
     print('bash tmux_setup(termux)')
     print('=====================================')
 #############################################################
+#elif choose =='8':
+
