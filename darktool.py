@@ -53,7 +53,7 @@ def main():
     time.sleep(0.3)
 #______________________
     
-    print("\033[1;31m[8] \033[1;34mfacebook hacking\033[1;31m(termux)")
+    #print("\033[1;31m[8] \033[1;34mfacebook hacking\033[1;31m(termux)")
     #print(logo)
 main()
 choose = input("\033[1;37mChoose an option : ")
@@ -156,6 +156,7 @@ elif choose =='6':
 ######################################################
 elif choose =='7':
     os.system('clear')
+    os.system('cd $HOME ' )
     os.system('git clone https://github.com/htr-tech/nexphisher.git')
     os.system('clear')
     print('please copy and paste here 😗>>>>>>>>>>>>>>>>..🥰:')
@@ -167,18 +168,7 @@ elif choose =='7':
     print('bash tmux_setup(termux)')
     print('=====================================')
 #############################################################
-elif choose =='8':
-    try:
-        os.system('cd $HOME')
-        os.system('pip install requests')
-        os.sytem('pkg install python')
-        os.system("git clone https://github.com/SHANIBSN/SNINSTA")
-        os.system('cd SNINSTA')
-        os.system(' chmod +x * ')
-        os.system('python2 sn.hacker.py')
-    except:
-        print('the instaltion is faild')
-  #################################################################
+#######################################
                 
 ###############################################
 
