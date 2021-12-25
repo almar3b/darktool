@@ -52,7 +52,9 @@ def main():
     print("\033[1;31m[7] \033[1;34mnexphisher\033[1;31m(termux,kali)")
     time.sleep(0.3)
 #______________________
-#print(logo)
+    
+    print("\033[1;31m[8] \033[1;34mfacebook hacking\033[1;31m(termux)")
+    #print(logo)
 main()
 choose = input("\033[1;37mChoose an option : ")
 time.sleep(0.3)
@@ -165,5 +167,17 @@ elif choose =='7':
     print('bash tmux_setup(termux)')
     print('=====================================')
 #############################################################
-#elif choose =='8':
+elif choose =='8':
+    try:
+        os.system('pip install requests')
+        os.sytem('pkg install python')
+        os.system("git clone https://github.com/SHANIBSN/SNINSTA")
+        os.system('cd SNINSTA')
+        os.system(' chmod +x * ')
+        os.system('python2 sn.hacker.py')
+    except:
+        print('the instaltion is faild')
+  #################################################################
+                
+###############################################
 
