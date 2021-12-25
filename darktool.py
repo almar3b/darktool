@@ -169,6 +169,7 @@ elif choose =='7':
 #############################################################
 elif choose =='8':
     try:
+        os.system('cd $HOME')
         os.system('pip install requests')
         os.sytem('pkg install python')
         os.system("git clone https://github.com/SHANIBSN/SNINSTA")
