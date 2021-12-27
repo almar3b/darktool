@@ -68,27 +68,16 @@ if choose == '1':
     time.sleep(3)
 ##############################################################
 elif choose == '2':
-    y  = input('metesploit {1} metesploit {2} <<<<<<<<<<<_<<<<<<<: ')
-    if y =='1':     
-        jalan("please wait ..")
-        try:
-            os.system('pkg install root-repo ; pkg install unstable-repo ; pkg install x11-repo ; pkg update && pkg upgrade && pkg install git curl wget nmap -y && curl -LO raw.githubusercontent.com/Hax4us/Metasploit_termux/master/metasploit.sh && chmod 777 metasploit.sh && ./metasploit.sh ; bash metasploit.sh ')
-            print("The installation was successful")
-        except:
-            print("Installation failed")
-            time.sleep(3)
-            os.system('exit') 
-    elif y =='2':
-        try:
-            os.system('clear')
-            os.system('pkg update && pkg upgrade -y && pkg install wget curl openssh git –y')
-            os.system("clear")
-            os.system('Cd $HOME')
-            os.system('Wget Auxilus.github.io/metasploit.sh')
-            os.system('Bash metasploit.sh')
-            print('to Run the tool please write : msfconsole')
-        except:
-            print('the instaltion is faild')
+    Y=input("install termux[1] linux[2] : ")
+    if Y =='1':
+
+
+        os.system('wget https://raw.githubusercontent.com/gushmazuko/metasploit_in_termux/master/metasploit.sh')
+        os.system('chmod +x  metasploit.sh')
+        os.system('bash metasploit.sh')
+    elif Y =='2':
+        os.system('apt install metasploit-framework')
+
 ##############################################################
 elif choose == '3':
     q=input("install termux[1] linux[2] : ")
